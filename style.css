@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9f1fa;
+    color: #183451;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+header {
+    background-color: #123b68;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+header h1 {
+    color: #f4d35e;
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+
+
+nav {
+    background-color: #f4d35e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+#menu a {
+    color: #123b68;
+    text-decoration: none;
+    margin: 10px;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #123b68;
+}
+
+
+
+main {
+    margin-top: 15px;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #e1b63d;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #123b68;
+}
+
+h3 {
+    color: #123b68;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+
+.about-content {
+    display: flex;
+    gap: 20px;
+}
+
+.about-content img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+
+
+.paper-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.single_book {
+    background-color: aliceblue;
+    border: 1px solid #e1b63d;
+    padding: 15px;
+    text-align: center;
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+.single_book img {
+    width: 80px;
+    height: 80px;
+}
+
+.single_book h3 {
+    color: #123b68;
+}
+
+.hobby-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+
+.hobby {
+    background-color: aliceblue;
+    border: 1px solid #e1b63d;
+    padding: 15px;
+    min-width: 0;
+}
+
+.hobby img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: #123b68;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+footer a {
+    color: #f4d35e;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #f4d35e;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    #hamburger {
+        display: block;
+        margin: 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu.show {
+        display: block;
+    }
+
+    #menu a {
+        display: block;
+        padding: 10px;
+    }
+
+    .about-content {
+        display: block;
+    }
+
+    .about-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .paper-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hobby-cards {
+        grid-template-columns: 1fr;
+    }
+
+   
+
+}
